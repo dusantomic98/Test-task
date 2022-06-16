@@ -1,0 +1,571 @@
+
+body{
+    margin: 0;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-image: linear-gradient(to top, #e0e0e0 0%, #ffffff 100%);
+    background-repeat: no-repeat;
+}
+
+.wrapper{
+    display: flex;
+    background-image: linear-gradient(
+        to top,
+        #0d6aa2 0%,
+        #2c8bbd 74%,
+        #58b8e3 77%,
+        #9ad9f2 100%
+    );
+}
+.patient h3{
+    width: 4.90vw;
+}
+.physician h3{
+    width:6.25vw ;
+}
+.resources h3{
+    width:4.64vw ;
+}
+.company h3{
+    width: 4.6vw;
+}
+.logo img{
+    width:18.58vw ;
+    margin-top: -1.03vw;
+    margin-bottom: -1.483vw;
+}
+
+
+
+.patient,.physician,.resources,.company{
+    width:15.54vw;
+    margin: 0 auto ;
+    cursor: pointer;
+    position: relative;
+    z-index: 11;
+}
+.patient:hover,
+.physician:hover,
+.resources:hover,
+.company:hover {
+  background-image: url("./images/background-hover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header .patient:hover ul{display: block;}
+header .physician:hover ul{display: block;}
+header .resources:hover ul{display: block;}
+header .company:hover ul{display: block;}
+
+
+.patient h3,.physician h3,.resources h3,.company h3{
+    color: white;
+    font-size:1.29vw ;
+    font-family: 'Open Sans',sans-serif;
+    font-style: italic;
+    line-height: 3.161vw;
+    margin: 1.29vw auto 0;
+}
+.arrows{
+    width: 100vw;
+    display: flex;
+    margin-top: -0.967vw;
+}
+.container{
+    width:1.54vw;
+    margin: 0 auto ;
+    position: relative;
+    z-index: 12;
+   
+}
+.patient-arrow,.physician-arrow,.resources-arrow,.company-arrow{
+    width: 1.41vw; 
+    height:1.41vw; ;
+    background-color: #8bd3ef;
+    background-image: linear-gradient(to top, #8bd3ef 0%, #ccf1ff 100%);
+    border-radius: 0.8vw;
+    margin: 0 auto;
+    box-shadow: 0 -0.258vw 0 #0d4f76, inset 0 0.45vw 0 rgba(255, 255, 255, 0.55);
+   
+    
+}
+.patient-arrow h4,.physician-arrow h4,.resources-arrow h4,.company-arrow h4{
+    width: 0.45vw;
+    color: #0f6ca4;;
+    margin: 0;
+    padding: 0.3vw; 
+    font-size: 0.8vw;
+    cursor: pointer;
+    
+}
+ul{ 
+    display: none;
+    width:11.548vw ;
+    list-style: none;
+    background-color: #156da1;
+    margin: 0vw 0 1vw 2vw;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    z-index: 4;
+    padding-top: 2vw;
+
+}
+.active{display: block;}
+
+ul a:hover{
+    border-radius: 1vw;
+    background-color: #62bde5;
+
+}
+ul a{
+    text-decoration: none;
+    color: white;
+    font-size:1.29vw ;
+    font-family: 'Open Sans',sans-serif;
+    font-style: italic;
+    line-height: 3.161vw;
+    margin:0 auto 0;
+    width: 4.90vw;
+    
+    
+}
+.hero{
+    display: flex;
+    width: 45.161vw;
+   
+}
+.icon{
+    margin-top: 4.45vw;
+    margin-left:2.58vw ;
+}
+.icon img{
+    width: 9.74vw;
+    position: absolute;
+    z-index: 1;
+}
+.icon-txt{
+    
+    margin-top: 5.161vw;
+    position: relative;
+    margin-left: 4.51vw;
+    
+}
+.icon-txt h1{
+    width:31.16vw ;
+    padding: 0.96vw 0 0.96vw 3.741vw ;
+    margin-left: 3.22vw;
+    color: white;
+    border-radius: 0.322vw;
+    background-image: radial-gradient(circle 299px at -66.94% 93.11%, rgba(32, 158, 209, 0.55) 0%, rgba(190, 233, 249, 0.55) 100%), linear-gradient(to top, #195c79 0%, #5cbce5 6%, #6ccdf7 29%, #9ce1ff 78%, #cef0ff 87%, #9ce1ff 100%);
+    font-family: "STIX Two Text";
+    font-size: 1.80vw;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.93vw;
+    letter-spacing: 0.09vw;
+}
+.info{
+    width:24.96vw ;
+    box-shadow: 0 0.12vw 0.322vw 0.064vw rgba(0, 0, 0, 0.17);
+    border-radius: 0 0 4.516vw;
+    border: 0.064vw solid #f7f7f7;
+    background-color: #f7f7f7;
+    opacity: 0.9;
+    margin-left: 4.5161vw;
+    margin-top:-0.967vw ;
+}
+.pay-bill{
+    margin:7.419vw 0 0 5.806vw  ;
+    display: flex;
+    width: 19.096vw;
+    background-color:white ;
+}
+.bill-info{
+    width: 19.096vw;
+    margin:1.741vw 0 0 5.806vw ;
+
+}
+.bill-info h2{
+width: 8.19vw;
+opacity: 0.65;
+color: #000000;
+font-family: "Open Sans";
+font-size: 1.419vw;
+font-weight: 700;
+line-height: 1.93vw;
+padding-left: 1.806vw;
+
+
+}
+.pay-bill h2{
+    margin: 0;
+    padding: 1.29vw 0 1.29vw  1.161vw;
+    width: 8.19vw;
+    color: #3d9ccc;
+    font-family: "Open Sans";
+    font-size: 1.419vw;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 1.93vw;
+   
+}
+.pay-bill input{
+    margin: auto 0;
+    width: 1.29vw;
+    
+    
+}
+.wrap{
+    width: 100vw;
+    background-image: linear-gradient(to top, #e0e0e0 0%, #ffffff 100%);
+    background-repeat: no-repeat;
+
+}
+.main{
+    width: 100vw;
+    display: flex;
+    background-image: url("./images/hero-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left -38.70vw;
+    
+    
+  
+
+}
+.left-side{
+    background-image: url("./images/cells2.png");
+    background-size: cover;
+    
+}
+.right-side{
+    width: 74vw;
+    background-image: url("./images/man.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 13.870vw;
+    height:48.38vw ;
+}
+.description{
+    width:27.87vw ;
+    margin-left: -6.451vw;
+   
+}
+.description h1{
+    width:16.419vw;
+    color: #1573a9;
+    font-family: "STIX Two Text";
+    font-size: 2.3225vw;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.935vw;
+    letter-spacing: 0.116vw;
+}
+.description p{
+width:27.87vw;
+color: #000000;
+font-family: "Open Sans";
+font-size: 1.096vw;
+font-weight: 400;
+line-height: 1.806vw;
+letter-spacing: 0.054vw;
+}
+.information{
+    width: 45.161vw;
+    background-image: url("./images/cells.png");
+    background-size: contain;
+    padding-top: 64.12vw;
+   
+    
+    
+  
+}
+.blue-bg{
+    width: 100vw;
+    height: 10.838vw;  
+    position: relative; 
+
+    
+    
+}
+.design{
+    background-size: contain;
+    width: 100vw;
+    height: 10.838vw;  
+    background-image: url("./images/3d-bg.png");
+    background-repeat: no-repeat;
+    background-position: right -0.645vw;
+    margin-top: -10vw;
+    position:absolute ;
+    z-index: 5;
+    background-position: right 0.129vw;
+}
+
+.blue-bg::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width:  14.967vw 14.967vw 0 0;
+    border-color:  transparent   white transparent    transparent    ;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 4;
+    
+}
+.blue-bg::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 14.967vw 14.967vw 0;
+    border-color:  transparent transparent white transparent;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 4;
+
+}
+
+
+.information h3{
+    position: absolute;
+    z-index: 6;
+    margin-left: 71vw;
+    width: 24.516vw;
+    margin-top: -7vw;
+    color: #8b8b8b;
+    font-family: "STIX Two Text";
+    font-size: 1.29vw;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.935vw;
+    letter-spacing: 0.064vw;
+    padding: 1.419vw 0 1.419vw 3.096vw;
+    box-shadow: inset 0 0.258vw 0 #828282;
+    border-radius: 0.322vw 0.322vw 0 0;
+    background-image: radial-gradient(circle 236px at -42% 103.05%, rgba(213, 213, 213, 0.55) 0%, rgba(244, 244, 244, 0.55) 100%), linear-gradient(to top, #7c7c7c 0%, #e6e6e6 6%, #f7f7f7 29%, #ffffff 78%, #ffffff 87%, #ffffff 100%);
+   
+}
+.information a{
+    text-decoration: none;
+}
+.information span{
+    color: #0e6ca3;
+    display: inline-block;
+    width:0.580vw ;
+}
+.light-blue{
+    margin-top: -6vw;
+}
+
+.light-blue span{
+    display: block;
+    background-size: contain;
+    width: 100vw;
+    height: 5.838vw;  
+    background-image: linear-gradient(to top, rgba(32, 155, 207, 0.75) 0%, rgba(53, 169, 218, 0.75) 28%, rgba(108, 205, 247, 0) 100%);
+    opacity: 0.43;
+    position:absolute ;
+    z-index: 2;
+    
+}
+.button{
+    height: 0;
+    width: 100vw;
+    background-image: linear-gradient(to top, #d7d6d6 0%, #ffffff 100%);
+    margin-top: 5.9vw;
+    position: absolute;
+
+}
+/* .back-top h3::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5.6vw 5.6vw 0;
+    border-color:  transparent transparent white transparent;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 4;
+
+}
+.back-top h3::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width:  5.6vw 5.6vw 0 0;
+    border-color:  transparent  white transparent    transparent    ;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 4;
+
+} */
+.back-top{
+    cursor: pointer;
+    width: 28.25vw;
+    margin: 0 auto ;
+    background-color: #828282;
+    text-align: center;
+    position:relative;
+    z-index: 8;
+    clip-path: polygon(20% 100%, 80% 100%, 100% 0%, 0% 0%);
+
+    
+   
+}
+.back-top h3{
+   cursor: pointer;
+   margin: 0 auto -2vw auto;
+    padding: 1.741vw 0;
+    width: 28.161vw;
+    color: #e6e6e6;
+    font-family: "STIX Two Text";
+    font-size: 1.29vw;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.935vw;
+    letter-spacing: 0.032vw;
+    position: relative;
+    
+
+    }
+    .foot-content{
+        width: 100vw;
+        margin-top: 10vw;
+        position: absolute;
+        display: flex;
+        z-index: 7;
+        background-color: #dddcdc;
+    }
+    
+    .foot-right{
+        display: flex;
+        margin-bottom: 3.58vw;
+        height: 5vw;
+        margin-top: 4vw
+    }
+    
+
+    .foot-right img{
+        width: 10vw;
+        margin-left: 5.161vw;
+    }
+    .fb{
+        width:3.483vw ;
+        margin-left:6.645vw ;
+        margin-top: 1.29vw;
+        box-shadow: 0 0.129vw 0.25vw rgba(0, 0, 0, 0.54), inset 0 0.77vw 0 rgba(255, 255, 255, 0.89);
+        background-color: #ffffff;
+        background-image: linear-gradient(to bottom, #e3e3e3 0%, #e3e3e3 6%, #d2d2d2 51%, #a8a8a8 100%);
+        border-radius: 2vw;
+   
+    }
+    .fb i,.twit i,.fb a,.twit a{
+        color: #828282;
+        padding-top: 1.5vw;
+        padding-left: 0.5vw;
+        font-size:1.77vw;
+    }
+    .twit{
+        width:3.483vw ;
+        margin-top: 1.29vw;
+        box-shadow: 0 0.129vw 0.25vw rgba(0, 0, 0, 0.54), inset 0 0.77vw 0 rgba(255, 255, 255, 0.89);
+        background-color: #ffffff;
+        background-image: linear-gradient(to bottom, #e3e3e3 0%, #e3e3e3 6%, #d2d2d2 51%, #a8a8a8 100%);
+        margin-left: 1.419vw;
+        border-radius: 2vw;
+        
+        
+    }
+    .foot-middle{
+        width: 23vw;
+        margin-left: 9.225vw;
+    }
+    .terms{
+
+        display: flex;
+        margin-top: 2.06vw;
+    }
+    .service{
+        width:9.419vw ;
+        font-family: "Open Sans",sans-serif;
+        color: #373737;
+        font-size: 1.096vw;
+        font-weight: 700;
+        letter-spacing: normal;
+        line-height: 3.161vw;
+        
+    }
+    .privacy{
+        width:9.419vw ;
+        font-family: "Open Sans",sans-serif;
+        color: #373737;
+        font-size: 1.096vw;
+        font-weight: 700;
+        letter-spacing: normal;
+        line-height: 3.161vw;
+        margin-left:4.58vw ;
+
+    }
+    .copyright{
+        width: 23vw;
+        margin-top: 2.06vw;
+        color: #373737;
+        font-size: 1.096vw;
+        font-weight: 700;
+        letter-spacing: normal;
+        line-height: 3.161vw;
+        text-align: center
+    }
+    .copyright p::before{
+        content: '';
+        width: 26vw;
+        height: 0;
+        border-style: solid;
+        border-width: 0 3vw 3vw 0;
+        border-color: transparent transparent white transparent;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 4;
+
+    }
+    .copyright p::after{
+        content: '';
+        width: 26vw;
+        height: 0;
+        border-style: solid;
+        border-width:  3vw 3vw 0 0;
+        border-color:   white  transparent    transparent    transparent     ;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 4;
+        transform: rotate(180deg);
+    }
+    .genesis-long{
+        width: 16.516vw;
+        margin-top: 3.806vw;
+        margin-left: 1.935vw;
+    }
+    .genesis{
+        width:7.419vw;
+        margin-left: 2.64vw;
+        margin-top: 2.580vw;
+
+    }
+   
+
+
+
+
